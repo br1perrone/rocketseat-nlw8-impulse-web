@@ -1,19 +1,5 @@
-type ButtonProps = {
-  title?: string;
-};
+import { Widget } from "./components/Widget";
 
-function Button(props: ButtonProps) {
-  return <button className="button">{props.title || `Default`}</button>;
+export function App() {
+  return <Widget />;
 }
-
-function App() {
-  return (
-    <div className="flex gap-2">
-      <Button title="Enviar" />
-      <Button title="OK" />
-      <Button />
-    </div>
-  );
-}
-
-export default App;
